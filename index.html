@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <title>John Finance</title>
+</head>
+<body>
+        <!-- Header -->
+    <header>
+        <div class="titulo">
+            <h2>John Finance</h2>
+            <img src="assets/img/$.svg" alt="Ícone Cifrão">
+        </div>
+    </header>
+        <!-- Cards -->
+    <main class="container">
+        <section class="cards card1">
+            <div class="card">
+                <h2 class="h2">Entradas</h2>
+                <p class="p">R$ 17,400,00</p>
+                <img src="assets/img/Entradas.svg" alt="Ícone Entradas">
+            </div>
+            <div class="card card2">
+                <h2 class="h2">Saídas</h2>
+                <p class="p">R$ 12,400,00</p>
+                <img src="assets/img/Saídas.svg" alt="Ícone Saídas">
+            </div>
+            <div class="card total card3">
+                <h2 class="h2">Total</h2>
+                <p class="p">R$ 7,400,00</p>
+                <img src="assets/img/Total.svg" alt="Ícone Total">
+            </div>
+        </section>
+        <!-- Input and output table -->
+        <section >
+            <div onclick="modal()" class="novaTransacao">
+                <img src="assets/img/plus.svg" alt="Ícone mais">
+                <p> Nova Transação</p>
+            </div>
+            <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                                <th>Data</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Água</td>
+                                <td class="positive">R$ 500,00</td>
+                                <td>22/10/2022</td>
+                                <td><img src="assets/img/minus.svg" alt="Ícone menos"></td>
+                            </tr>
+                            <tr>
+                                <td>Luz</td>
+                                <td class="negative">R$ - 1500,00</td>
+                                <td>01/10/2022</td>
+                                <td><img src="assets/img/minus.svg" alt="Ícone menos"></td>
+                            </tr>
+                            <tr>
+                                <td>Internet</td>
+                                <td class="positive">R$ 800,00</td>
+                                <td>06/09/2022</td>
+                                <td><img src="assets/img/minus.svg" alt="Ícone menos"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </section>
+    </main>
+        <!-- Modal -->
+    <div class="modalOverlay">
+        <div class="modal">
+            <h3>Nova Transação</h3>
+            <input type="text" placeholder="Descrição">
+            <input type="number" placeholder="0,00">
+            <p>Use o sinal -(negativo) para despesas e , (vírgula) para casas decimais </p>
+            <input type="date" placeholder="dd/mm/yyyy">
+            <div class="options">
+                <button onclick="cancelar()">Cancelar</button>
+                <button>Salvar</button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="assets/javascript/modal.js"></script>
+</html>

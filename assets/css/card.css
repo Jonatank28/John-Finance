@@ -1,0 +1,45 @@
+.cards{
+    margin-top: -60px;
+    display: flex;
+    gap: 20px;
+}
+.card{
+    background-color: var(--text-white);
+    padding: 1.6rem;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+}
+.h2{
+    margin-bottom: 16px;
+    color: var(--title);
+    font-weight: 400;
+}
+.p{
+    color: var(--title);
+    font-size: 1.8rem;
+}
+.card img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.card2 h2{
+    color: var(--text);
+
+}
+.card3 h2,
+.card3 p{
+    color: var(--text-white);
+}
+.total{
+    background-color: var(--text-decoration-positive);
+}
+
+/* Mobile */
+
+@media (max-width: 500px){
+    .cards{
+    flex-direction: column;
+    }
+}

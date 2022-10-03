@@ -1,0 +1,80 @@
+.modalOverlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.modalOverlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal{
+    background-color: var(--background);
+    padding: 1.5rem;
+    width: min(550px, 90vw);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 3px;
+}
+.modal h3{
+    color: var(--title);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.modal p{
+    color: var(--text);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+.modal input{
+    padding: 0.4rem;
+    border: none;
+    border-radius: 3px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+.options button{
+    margin-top: 10px;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.options button:first-child{
+    border: 2px solid var(--text-decoration-negative);
+    color: var(--text-decoration-negative);
+    background-color: var(--background);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+.options button:first-child:hover{
+    border: 2px solid var(--text-decoration-negative);
+    color: var(--text-decoration-negative);
+    background-color: var(--background);
+    opacity: 1;
+}
+.options button:last-child{
+    background-color:  var(--text-decoration-positive);
+    color: var(--text-white);
+    transition: 0.2s;
+}
+.options button:last-child:hover{
+    background-color:  var(--text-decoration-positive-light);
+    color: var(--text-white);
+}
+
+/* Mobile */
+

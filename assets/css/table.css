@@ -1,0 +1,57 @@
+.novaTransacao{
+    position: relative;
+    cursor: pointer;
+}
+.novaTransacao p{
+    padding-left: 30px;
+}
+.novaTransacao img{
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 25px;
+}
+.table{
+    margin-top: 5px;
+    overflow-x: hidden;
+}
+.table table{
+    width: 100%;
+    border-spacing: 0 0.5rem;
+}
+.novaTransacao p{
+    margin: 30px 0 20px;
+    color: var(--text-decoration-positive);
+    font-size: 1rem;
+}
+table th{
+    color: var(--text);
+    font-weight: 400;
+    text-align: left;
+    padding: 0.7rem 0.6rem;
+    background-color: var(--text-white);
+    border-radius: 3px;
+}
+table td{
+    background-color: var(--text-white);
+    border-radius: 3px;
+    padding: 0.6rem;
+}
+tbody tr td:nth-child(3){
+    color: var(--text);
+}
+tbody tr td{
+    color: var(--title);
+}
+.positive{
+    color: var(--text-decoration-positive);
+}
+.negative{
+    color: var(--text-decoration-negative);
+}
+
+@media (max-width: 500px){
+    tbody tr td{
+        font-size: 0.8rem;
+    }
+}
